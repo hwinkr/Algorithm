@@ -76,3 +76,36 @@ class QuickSort{
         data[end] = changeBox;
     }
 }
+class QuickSort1{
+    static int[] arr = new int[10];
+    static Scanner sc = new Scanner(System.in);
+    public static void main (String[] args){
+        for (int i=0; i<arr.length; i++) arr[i] = sc.nextInt();
+        quickSort(arr, 0,arr.length-1);
+        System.out.println(Arrays.toString(arr));
+    }
+    static void quickSort(int[] data , int start ,int end){
+        int part2 = partition (data,start,end);
+        //재귀함수 사용.
+        if (start < part2-1) quickSort(data,start,part2-1);
+        if (part2 < end) quickSort(data,part2,end);
+    }
+    static int partition(int[] data, int start , int end) {
+        int pivot = data[(start + end) / 2];
+        while(start <=end) {
+            while (data[start] < pivot) start++;
+            while (data[end] > pivot) end--;
+            if (start <= end) {
+                swap(data, start, end);
+                start++;
+                end--;
+            }
+        }
+        return start;
+    }
+    static void swap (int[] data, int start , int end){
+        int changeBox = data[start];
+        data[start] = data[end];
+        data[end] = changeBox;
+    }
+}
