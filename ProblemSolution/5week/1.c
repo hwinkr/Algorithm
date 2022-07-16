@@ -38,7 +38,7 @@ int main(){
 
     absoluteNumber = answerNumber - K;
     if(absoluteNumber < 0) absoluteNumber = -absoluteNumber;
-
+    
     if(!isSmaller)
         printf("-1");
     else
