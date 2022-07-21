@@ -33,7 +33,7 @@ int main(){
         printf("\n");
     }
     printf("\n");
-    //2
+    // 2
     int direction[][2] ={{-1 , -1} , {-1 , 0} , {-1 , 1} , {0 , 1} , {1 , 1} , {1 , 0} , {1 , -1} , {0 , -1}};
     for(int i = 0; i < N; i++){
         for(int j = 0; j < N; j++){
