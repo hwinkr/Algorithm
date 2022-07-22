@@ -4,6 +4,7 @@
 #define MAX 100
 int main (){
     // 4 : 행 , 열의 평균과 표준편차
+    
     int N;
     FILE * file = fopen("input.txt" , "r");
     fscanf(file , "%d" , & N);
