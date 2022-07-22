@@ -4,7 +4,7 @@
 #define MAX 100
 int main (){
     // 4 : 행 , 열의 평균과 표준편차
-    
+
     int N;
     FILE * file = fopen("input.txt" , "r");
     fscanf(file , "%d" , & N);
@@ -19,6 +19,7 @@ int main (){
 
     int sum;
     double average , despersionSum , devitation ;
+    //행
     for(int i = 0; i < N; i++){
         sum = 0;
         average = 0;
