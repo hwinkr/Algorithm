@@ -1,6 +1,8 @@
 #include <stdio.h>
 #define MAX 100
 int main(){
+    // 6 : 시계방향으로 배열 값 출력하기
+
     int N;
     int arr[MAX][MAX];
 
@@ -15,35 +17,30 @@ int main(){
     int printDir = 0;
     int startX = 0 , limitX = N - 1 ;
     int startY = 0 , limitY = N - 1;
-    // printDir 
-    // 0 right
-    // 1 down
-    // 2 left
-    // 3 up
-    
+ 
     while(printCnt < N * N){
-        if(printDir % 4 == 0){
+        if(printDir % 4 == 0){ // right
             for(int i = startY; i <= limitY; i ++){
                 printf("%d ", arr[startX][i]);
                 printCnt ++;
             }
             printDir = 1;
             startX ++;
-        }else if(printDir % 4 == 1){
+        }else if(printDir % 4 == 1){ // down
             for(int i = startX; i <= limitX; i ++){
                 printf("%d ", arr[i][limitY]);
                 printCnt ++;
             }
             printDir = 2;
             limitY --;
-        }else if(printDir % 4 == 2){
+        }else if(printDir % 4 == 2){ // left
             for(int i = limitY; i >= startY; i --){
                 printf("%d ", arr[limitX][i]);
                 printCnt ++;
             }
             printDir = 3;
             limitX --;
-        }else  if(printDir % 4 == 3){
+        }else  if(printDir % 4 == 3){ // up
             for(int i = limitX; i >= startX; i --){
                 printf("%d " , arr[i][startY]);
                 printCnt++;
