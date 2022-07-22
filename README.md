@@ -1,4 +1,4 @@
 # Algorithm
-*c
-*py
-*java
+* c
+* py
+* java
