@@ -17,6 +17,7 @@ int main (){
         scanf("%d" , &getNum);
         if(getNum < minNum && getNum >= 0) minNum = getNum;
     }
+    
     printf("음이아닌 정수중 가장 작은 값은 : %d", minNum);
 
     return 0;
