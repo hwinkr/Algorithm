@@ -1,8 +1,8 @@
 #include <stdio.h>
 #define MAX 100
 int main(){
-    // 5 : 합이 최대인 부분행렬 출력하기 , 부분행렬은 반드시 정방행렬은 아님 , 가능한 모든 부분행렬을 구해야함
-    
+    // 5 : 합이 최대인 부분행렬 출력하기 , 부분행렬은 반드시 정방행렬은 아님.
+
     int N;
     int arr[MAX][MAX];
     FILE *file = fopen("input5.txt" , "r");
