@@ -9,22 +9,19 @@ int main(){
     for(int i = 0; i < N; i++){
         for(int j = 0; j < N; j++) fscanf(file , "%d" , &arr[i][j]);
     }
-
-    int sumMax = -1;
-    int sum = 0;
+    fclose(file);
+    int sum = 0 , sumMax = -1;
     int startX = 0 , startY = 0;
-    int k = 0;
     int xCount = 2, yCount = 2;
+    // 2X2 , 2X3 , 2X4 ,,,, 4X4
     while(1){
         int sum = 0;
         for(int i = startX; i < startX + xCount; i++){
-            for(int j = startY; j < startY + yCount; j++){
-                sum += arr[i][j];
-            }
+            for(int j = startY; j < startY + yCount; j++) sum += arr[i][j];
         }
         startY ++;
         if(sumMax < sum) sumMax = sum;
-        // 리팩토링 필요
+        
         if(startY > N - yCount){
             startY = 0;
             startX ++;
