@@ -3,6 +3,8 @@
 #include <time.h>
 #define MAX 100
 int main(){
+    // 1 : 미로 탈출하기
+    
     int N , T = 10000 , maze[MAX][MAX];
     int escapeCnt = 0;
     scanf("%d" , &N);
