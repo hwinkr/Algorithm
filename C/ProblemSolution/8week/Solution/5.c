@@ -29,17 +29,20 @@ int main(){
             startY = 0;
             startX ++;
         }
+
         if(startX > N - xCount){
             startX = 0;
             startY = 0;
             yCount++;
         }
+
         if(yCount > N) {
             startX = 0;
             startY = 0;
             xCount ++;
             yCount = 2;
         }
+        
         if(xCount > N) break;
     }
 
