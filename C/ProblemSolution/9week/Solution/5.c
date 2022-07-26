@@ -28,6 +28,7 @@ int main(){
 }
 
 int compareLexicograph(int a, int b){
+    
     if(a == b) return 0;
     else{
         int aStorage = a , bStorage = b;
