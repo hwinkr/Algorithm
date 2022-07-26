@@ -57,7 +57,7 @@ int main(){
     }
 
     for(int i = 0; i < k; i++){
-        if(i % 2) printf("%d\n" , locationArr[i]);
+        if(i % 2) printf("%d\n" , locationArr[i]); 
         else printf("%d " , locationArr[i]);
     }
 
