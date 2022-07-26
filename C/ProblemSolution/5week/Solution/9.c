@@ -12,6 +12,7 @@ int main(){
 
     int leaderCount = 0;
     int biggerCount = 0;
+    
     // 반복의 횟수가 정해져있지 않음 -> while 사용하는게 효율적
     while(fscanf(file , "%d" , &arr[n]) != EOF) n ++;
     fclose(file);
