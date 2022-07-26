@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(){
-    // 6 : 순열 사이클 갯수 출력하기
+    // 6 : 순열 사이클 갯수 출력하기 (DFS)
     
     int testCount;
     scanf("%d" , &testCount);
