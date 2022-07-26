@@ -2,6 +2,8 @@
 #define MAX 100
 int calSum(int *ptr , int size , int a);
 int main(){
+    // 6 : 다항식 만들어 계산하기
+    
     int arr[MAX];
     int n;
     scanf("%d" , &n);
