@@ -21,6 +21,7 @@ int main () {
     }
     
     gcd = y;
+    
     printf("gcd : %d" , gcd);
 
     return 0;
