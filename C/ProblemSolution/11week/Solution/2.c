@@ -5,10 +5,13 @@ int main(){
     FILE * file = fopen("input2.txt" , "r");
     int N;
     fscanf(file , "%d" , &N);
+    
     double arr[MAX][MAX];
+
     for(int i = 0; i < N; i++){
         for(int j = 0; j < N + 1; j++) fscanf(file , "%lf" , &arr[i][j]);
     }
+    fclose(file);
     // 하삼각행렬
     for(int i = 0; i < N; i++){
         for(int j = i + 1; j < N; j++){
