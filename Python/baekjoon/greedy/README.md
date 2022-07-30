@@ -11,7 +11,8 @@
 * [2839](https://www.acmicpc.net/problem/2839)
 * [11047](https://www.acmicpc.net/problem/11047)
 * [11399](https://www.acmicpc.net/problem/11399)
-* [13305](https://www.acmicpc.net/problem/13305) 
+* [13305](https://www.acmicpc.net/problem/13305)
+* [1946](https://www.acmicpc.net/problem/1946)
 
 ##### check
 `1931`
