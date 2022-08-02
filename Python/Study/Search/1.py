@@ -1,4 +1,4 @@
-# 1
+# 1 ~ 3.py 까지는 탐색 , 구현 문제 학습
 N = int(input())
 
 direction = input().split()
