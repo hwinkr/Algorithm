@@ -1,4 +1,5 @@
 # wait ATM
+
 N = int(input())
 person = list(map(int, input().split()))
 
