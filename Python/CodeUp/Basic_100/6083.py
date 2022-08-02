@@ -20,7 +20,7 @@
 # answer = a;
 # for i in range(0 , n - 1) :
 #     answer *= r;
-    
+
 # print(answer)
 
 # a , m , d , n = map(int, input().split())
@@ -28,7 +28,7 @@
 # answer = a;
 # for i in range(0 , n - 1) :
 #     answer = answer * m + d;
-    
+
 # print(answer);
 
 # a , b , c = map(int , input().split())
@@ -49,13 +49,13 @@
 
 # for i in range(24) :
 #     d.append(0)
-    
+
 # for i in range(n) :
 #     d[a[i]] += 1;
 
 # for i in range(1,24) :
 #     print(d[i] , end=" ")
-    
+
 # n = int(input())
 # a = list(map(int , input().split()))
 
@@ -64,7 +64,7 @@
 #     tmp = a[i];
 #     a[i] = a[len(a) - i - 1]
 #     a[len(a) - i - 1] = tmp
-    
+
 # for i in range(len(a)) :
 #     print(a[i] , end=" ")
 
@@ -94,25 +94,29 @@
 #     print()
 
 
-n = 19 
+n = 19
 d = []
 
-for i in range(0 , n) :
+for i in range(0, n):
     d.append(list(map(int, input().split())))
 
 reverseCnt = int(input())
 
-for i in range(0 , reverseCnt) :
-    x , y = map(int, input().split())
-    for j in range(0 , n) :
-        if(d[x - 1][j] == 1) : d[x - 1][j] = 0
-        else : d[x - 1][j] = 1
-        
-    for j in range(0 , n) :
-        if(d[j][y - 1] == 1) : d[j][y - 1] = 0;
-        else : d[j][y - 1] = 1
-        
-for i in range(0 , n) :
-    for j in range(0 , n) :
-        print(d[i][j] , end=" ")
+for i in range(0, reverseCnt):
+    x, y = map(int, input().split())
+    for j in range(0, n):
+        if(d[x - 1][j] == 1):
+            d[x - 1][j] = 0
+        else:
+            d[x - 1][j] = 1
+
+    for j in range(0, n):
+        if(d[j][y - 1] == 1):
+            d[j][y - 1] = 0
+        else:
+            d[j][y - 1] = 1
+
+for i in range(0, n):
+    for j in range(0, n):
+        print(d[i][j], end=" ")
     print()

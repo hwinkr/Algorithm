@@ -1,3 +1,5 @@
+# 같은수 만들기
+
 a, b = map(int, input().split())
 count = 0
 

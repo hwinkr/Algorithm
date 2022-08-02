@@ -1,3 +1,5 @@
+# 두 수 묶기
+
 N = int(input())
 
 nums = []

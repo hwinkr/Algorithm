@@ -5,7 +5,7 @@ int main(){
     FILE * file = fopen("input2.txt" , "r");
     int N;
     fscanf(file , "%d" , &N);
-    
+
     double arr[MAX][MAX];
 
     for(int i = 0; i < N; i++){
@@ -23,7 +23,7 @@ int main(){
         //infinite solution
         for(int i = 0; i < N -1; i++){
             for(int j = i + 1; j < N; j++){
-                int sameCnt = 0;
+                int sameCnt = 0; 
                 for(int k = 0; k < N + 1; k++){
                     if(arr[i][k] == - arr[j][k]) sameCnt ++;
                 }
