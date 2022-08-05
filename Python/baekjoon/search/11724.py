@@ -4,6 +4,7 @@
 # pypy3 으로 제출해야 시간초과가 나지 않네.. 왜 그런거지
 
 # 1
+from collections import deque
 import sys
 sys.setrecursionlimit(10000)
 
@@ -14,6 +15,20 @@ def dfs(v):
     for i in graph[v]:
         if not visited[i]:
             dfs(i)
+
+
+def bfs(start):
+    visited[start] = True
+    que = deque()
+    que.append(start)
+
+    while que:
+        x = que.popleft()
+
+        for i in graph[x]:
+            if not visited[i]:
+                visited[i] = True
+                que.append(i)
 
 
 n, m = map(int, sys.stdin.readline().split())
@@ -31,6 +46,6 @@ cnt = 0
 for i in range(1, n + 1):
     if not visited[i]:
         cnt += 1
-        dfs(i)
+        bfs(i)
 
 print(cnt)
