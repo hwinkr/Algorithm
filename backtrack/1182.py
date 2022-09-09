@@ -1,3 +1,4 @@
+# 부분수열의 합
 import sys
 input = sys.stdin.readline
 
