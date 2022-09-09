@@ -3,4 +3,4 @@
 
 백준을 활용한 알고리즘 문제 풀이 저장소 입니다 :) <br />
 풀이가 필요하다고 생각되는 문제들은 아래 블로그에 따로 기록해두었습니다! <br />
-[tistory] (https://hwdev.tistory.com/)
+[tistory](https://hwdev.tistory.com/)
