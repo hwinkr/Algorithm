@@ -3,7 +3,6 @@
 n, k = map(int, input().split())
 
 coins = []
-
 answer = 0
 
 for i in range(0, n):
