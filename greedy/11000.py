@@ -5,9 +5,8 @@ input = sys.stdin.readline
 
 n = int(input())
 
-lectures = []
-for _ in range(n):
-    heapq.heappush(lectures, list(map(int, input().split())))
+lectures = [list(map(int, input().split())) for _ in range(n)]
+lectures.sort(key=lambda x: x[0])
 
 end_times = []
 while lectures:
