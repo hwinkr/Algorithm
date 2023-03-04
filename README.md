@@ -1,5 +1,5 @@
 # 🔥 알고리즘 열심히 풀자!
 
-### In this repository, algorithm solutions are recorded by Baekjun and Programmers and etc...
+##### 백준과 프로그래머스 등에서 해결한 알고리즘 문제의 풀이를 기록합니다~!
 ##### 알고리즘 재밌습니다.
 ##### 열심히 하겠습니다.
