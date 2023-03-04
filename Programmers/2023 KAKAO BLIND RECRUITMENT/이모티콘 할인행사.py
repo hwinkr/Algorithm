@@ -38,19 +38,3 @@ total_member, total_money = -1, -1
 def solution(users, emoticons) -> list:
     sol(users, emoticons, [], [10, 20, 30, 40])
     return [total_member, total_money]
-
-
-print(
-    solution(
-        [
-            [40, 2900],
-            [23, 10000],
-            [11, 5200],
-            [5, 5900],
-            [40, 3100],
-            [27, 9200],
-            [32, 6900],
-        ],
-        [1300, 1500, 1600, 4900],
-    )
-)
