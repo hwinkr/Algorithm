@@ -1,6 +1,5 @@
-# Boj + py 알고리즘 스터디
----
+# 🔥 알고리즘 열심히 풀자!
 
-백준 알고리즘 문제 풀이! <br />
-기록이 필요하다고 생각되는 문제들은 아래 블로그 :)<br />
-[tistory](https://hwdev.tistory.com/)
+### In this repository, algorithm solutions are recorded by Baekjun and Programmers and etc...
+##### 알고리즘 재밌습니다.
+##### 열심히 하겠습니다.
