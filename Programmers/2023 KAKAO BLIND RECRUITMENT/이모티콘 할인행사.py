@@ -2,7 +2,6 @@ def sol(users: list, emoticons: list, tmp: list, rates: list) -> list:
     global total_member, total_money
     if len(tmp) == len(emoticons):
         member, money = 0, 0
-
         for user in users:
             is_member = False
             rate, limit = user
@@ -14,7 +13,7 @@ def sol(users: list, emoticons: list, tmp: list, rates: list) -> list:
                         is_member = True
                         member += 1
                         break
-
+            # ! 전체 사용자가 이모티콘에 사용하는 돈, 즉 이모티콘 할인 행사로 인해서 얻는 총 금액을 의미한다..
             if not is_member:
                 money += curr
 

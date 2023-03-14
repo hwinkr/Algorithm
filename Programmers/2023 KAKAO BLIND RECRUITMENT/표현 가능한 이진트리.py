@@ -1,17 +1,17 @@
-def condition(tmp: str, node: str) -> bool:
+def condition(s: str, node: str) -> bool:
     # * 말단 노드 까지 확인 한 경우, return True
-    if len(tmp) == 1:
+    if len(s) == 1:
         return True
-
+    # * 만약 부모 노드가 0 인 경우,
     if node == "0":
-        for child in tmp:
+        for child in s:
             if child != "0":
                 return False
 
-    mid = len(tmp) // 2
+    mid = len(s) // 2
 
-    return condition(tmp[:mid], tmp[(mid - 1) // 2]) and condition(
-        tmp[mid + 1 :], tmp[(len(tmp) + mid) // 2]
+    return condition(s[:mid], s[(mid - 1) // 2]) and condition(
+        s[mid + 1 :], s[(len(s) + mid) // 2]
     )
 
 
